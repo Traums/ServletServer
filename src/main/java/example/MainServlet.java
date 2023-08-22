@@ -34,10 +34,10 @@ public class MainServlet extends HttpServlet {
 //        String params = formatParams(req);
 //        resp.getWriter().write("Method doGet\nURI: " + uri + "\nParams:\n" + params + "\n");
         String resHero =  new JSONObject().put("hero",new JSONObject()
-                                            .put("id",1)
-                                            .put("name","Pudge")
-                                            .put("lvl",1))
-                .toString();
+                                          .put("id",1)
+                                          .put("name","Pudge")
+                                          .put("lvl",1))
+                                          .toString();
         resp.getWriter().write(resHero);
     }
 
